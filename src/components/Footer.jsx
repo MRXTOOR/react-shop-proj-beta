@@ -2,7 +2,7 @@ import React from 'react'
 
 function Footer() {
   return (
-    <footer>Сайт для потфолио &copy; </footer>
+    <footer>Сайт для портфолио  &copy; </footer>
   )
 }
 
