@@ -1,11 +1,11 @@
 import React from 'react'
 
-function header() {
+function Header() {
   return (
    <header>
     <div>
       <span className='logo'>
-      Geek
+      Geek shop
       </span>
     </div>
     <div className='main-img'></div>
@@ -13,4 +13,4 @@ function header() {
   )
 }
 
-export default header
+export default Header;
