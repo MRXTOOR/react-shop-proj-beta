@@ -1,11 +1,53 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
 * {
     margin: 0;
-    top: 0;
-    left: 0;
     padding: 0;
 }
 
 body {
-    background: #000;
+    background: #ffffff;
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+.wrapper {
+    max-width: 1920px;
+    min-width: 122px;
+    margin: 50px 0;
+}
+
+header .logo {
+    font-weight: 700;
+    font-size: 50px;
+}
+
+header .main-img {
+    margin: 50px 0;
+    background: url(https://i.pinimg.com/originals/88/ad/0d/88ad0db87d748cb3b25f5c67be19407d.gif)no-repeat;
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+
+header .main-img::after {
+    content: 'Игры отрывают мир';
+    top: 50px;
+    color: #ffffff;
+    left: 100px;
+    font-size: 70px;
+    font-weight: 900;
+    position: absolute;
+}
+
+header .main-img::before {
+    content: 'По низким ценам ';
+    top: 340px;
+    color: #ffffff;
+    left: 100px;
+    font-size: 70px;
+    font-weight: 900;
+    position: absolute;
 }
