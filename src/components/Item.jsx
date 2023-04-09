@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React, { Component } from 'react'
 import AddIcon from '@mui/icons-material/Add';
 export class Item extends Component {

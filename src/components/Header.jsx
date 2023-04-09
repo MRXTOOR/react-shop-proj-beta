@@ -1,7 +1,7 @@
-import React,{UseState} from 'react'
+import React, {useState} from 'react'
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 function Header() {
-  let [cartOpen,SetCartOpen] = UseState(false)
+  let [cartOpen,SetCartOpen] = useState(false)
   return (
    <header>
     <div>
@@ -14,11 +14,21 @@ function Header() {
         <li>Контакты</li>
         <li>Кабинет</li>
       </ul>
-      <ShoppingCartIcon className='ShoppingCartIcon'/>
+
+      <ShoppingCartIcon onClick={() => SetCartOpen(cartOpen = !cartOpen)}  className={`ShoppingCartIcon ${cartOpen && `active`}`} />
+   {cartOpen && (
+    <div className='ShoppingCart'>
+      
     </div>
-    <div onClick={() => SetCartOpen(cartOpen = !cartOpen)} className='main-img'></div>
+   )}
+   
+   </div>
+    <div className='main-img'></div>
    </header>
   )
+
+
+  //className={`shop-cart ${cartOpen ? 'clicked' : ''}`
 }
 
 export default Header;

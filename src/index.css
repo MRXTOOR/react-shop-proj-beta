@@ -120,6 +120,10 @@ main .item img:hover {
     transform: scale(1.05);
 }
 
+header {
+    position: relative;
+}
+
 main h2,
 main p {
     margin: 10px 20px;
@@ -157,12 +161,24 @@ main .price {
 header .ShoppingCartIcon {
     float: right;
     cursor: pointer;
-    transition: color 500ms ease-in;
-    transition: transform 500ms ease-in-out;
+    transition: color, transform 500ms ease;
 }
 
 header .ShoppingCartIcon:hover,
-header .ShoppingCartIcon:active {
+header .ShoppingCartIcon.active {
     color: green;
-    transform: translateY(-5px);
+    transform: scale(1.5);
+}
+
+header .ShoppingCart {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    min-width: 300px;
+    min-height: 100px;
+    background: rgb(212, 212, 255);
+    z-index: 1000;
+    -webkit-box-shadow: 40px 31px 39px 12px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 40px 31px 39px 12px rgba(0, 0, 0, 0.2);
+    box-shadow: 40px 31px 39px 12px rgba(0, 0, 0, 0.2);
 }
