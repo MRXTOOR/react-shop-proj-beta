@@ -14,7 +14,7 @@ body {
 .wrapper {
     max-width: 1920px;
     min-width: 122px;
-    margin: 50px 0;
+    margin: 50px;
 }
 
 header .logo {
@@ -24,7 +24,7 @@ header .logo {
 }
 
 header .main-img {
-    margin: 50px 0;
+    margin: 50px auto;
     background: url(https://i.pinimg.com/originals/3d/74/68/3d7468d1bb523674726ba6934a396566.gif)no-repeat;
     width: 100%;
     height: 500px;
@@ -86,20 +86,27 @@ header ul.nav li:hover {
 
 main {
     display: flex;
-    width: 100%;
+    max-width: 1920px;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+
+@media(max-width: 1200px) {
+    main .item {
+        min-width: 100%;
+    }
 }
 
 main .item {
     width: 30%;
     margin-bottom: 50px;
-    background: #ffe5cc;
+    background: #e2f4fc;
     border-radius: 10px;
     padding: 10px;
     overflow: hidden;
     position: relative;
     padding-bottom: 20px;
+    margin-right: 20px;
 }
 
 main .item img {
@@ -118,7 +125,7 @@ main p {
 }
 
 main b {
-    color: green;
+    color: rgb(255, 255, 255);
 }
 
 main .added {
@@ -128,8 +135,20 @@ main .added {
     background: brown;
     width: 35px;
     height: 35px;
-    line-height: 35px;
+    line-height: 30px;
     text-align: center;
     color: white;
     border-radius: 50%;
+    transition: transform 500ms;
+}
+
+main .added:hover {
+    transform: scale(1.5) translateY(-5px);
+}
+
+main .price {
+    border-radius: 10px;
+    padding: 5px;
+    background: rgb(2, 36, 0);
+    background: linear-gradient(90deg, rgba(2, 36, 0, 1) 0%, rgba(140, 255, 176, 1) 54%, rgba(0, 212, 255, 0) 100%);
 }
