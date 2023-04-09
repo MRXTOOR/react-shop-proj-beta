@@ -83,3 +83,53 @@ header ul.nav li {
 header ul.nav li:hover {
     opacity: 0.3;
 }
+
+main {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+main .item {
+    width: 30%;
+    margin-bottom: 50px;
+    background: #ffe5cc;
+    border-radius: 10px;
+    padding: 10px;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+main .item img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 500ms ease;
+}
+
+main .item img:hover {
+    transform: scale(1.05);
+}
+
+main h2,
+main p {
+    margin: 10px 20px;
+}
+
+main b {
+    color: green;
+}
+
+main .added {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    background: brown;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    color: white;
+    border-radius: 50%;
+}
