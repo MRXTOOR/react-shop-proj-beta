@@ -24,6 +24,7 @@ header .logo {
 }
 
 header .main-img {
+    border-radius: 20px;
     margin: 50px auto;
     background: url(https://i.pinimg.com/originals/3d/74/68/3d7468d1bb523674726ba6934a396566.gif)no-repeat;
     width: 100%;
@@ -88,10 +89,10 @@ main {
     display: flex;
     max-width: 1920px;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
-@media(max-width: 1200px) {
+@media(max-width: 900px) {
     main .item {
         min-width: 100%;
     }
@@ -151,4 +152,17 @@ main .price {
     padding: 5px;
     background: rgb(2, 36, 0);
     background: linear-gradient(90deg, rgba(2, 36, 0, 1) 0%, rgba(140, 255, 176, 1) 54%, rgba(0, 212, 255, 0) 100%);
+}
+
+header .ShoppingCartIcon {
+    float: right;
+    cursor: pointer;
+    transition: color 500ms ease-in;
+    transition: transform 500ms ease-in-out;
+}
+
+header .ShoppingCartIcon:hover,
+header .ShoppingCartIcon:active {
+    color: green;
+    transform: translateY(-5px);
 }
